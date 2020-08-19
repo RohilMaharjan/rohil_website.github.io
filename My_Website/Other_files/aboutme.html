@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rohil Maharjan - My webpage</title>
+	<meta name="keywords" content="Rohil,Maharjan,webpage">
+	<meta name="Author" content="Rohil maharjan">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<link rel="icon" href="../Images/120-1205879_transparent-rated-r-png-png-download-black-r.png">
+	<link href="../Other_files/style.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="javascript.js"></script>
+	<style type="text/css">
+		#Home{
+			color: black;
+		}
+		#Home p:hover{
+			color: white;
+			transform: translateY(-5px);
+			transition: 0.5s;	
+		}
+		#About{
+			background-color: black;
+			border-radius: 15px;
+		}
+		#About p{
+			color:white;
+		}
+		#Gallery{
+			color: black;
+		}
+		#Gallery p:hover{
+			color: white;
+			transform: translateY(-5px);
+			transition: 0.5s;
+		}
+		#Contact{
+			color: black;
+		}
+		#Contact p:hover{
+			color: white;
+			transform: translateY(-5px);
+			transition: 0.5s;
+		}
+		#me{
+			height:900px;
+			width: 1300px;
+		}
+		#content{
+			background-image: url("../Images/PSX_20181222_232104-01.jpeg");
+			width: 100%;
+			height: 900px;
+			margin-top: 20px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		#intro{
+			font-family: "Segoe Print";
+			font-size: 26px;
+			font-weight: bold;
+			line-height: 2.2;
+			text-indent: 105px;
+			text-align: justify;
+			color: #508079;
+		}
+		#work{
+			font-family: "Segoe Print";
+			font-size: 25px;
+			font-weight: bold;
+			background-color: orange;
+			border-radius: 15px;
+			display: inline-block;
+			color: white;
+			padding:10px;
+			text-align: center;
+		}
+		#work:hover{
+			transform: scale(0.9);
+			transition: 0.5s;
+		}
+		.link{
+			background-color: rgba(241,221,125,0.5);
+			padding: 5px;
+			border-radius: 15px;
+		}
+		.link:hover{
+			background-color: rgba(241,221,125,1);
+		}
+	</style>
+	</title>
+</head>
+<body>
+<div id="title">
+	<center>
+		<table border="0" id="titlebar">
+			<tr>
+				<th id="Home"><a href="../Main_file.html"><p>Home</p></a></th>
+				<th id="About"><p>About me</p></th>
+				<th id="Gallery"><a href="../Other_files/gallery.html"><p>Gallery</p></a></th>
+				<th id="Contact"><a href="../Other_files/contact.html"><p>Contact me</p></a></th>
+			</tr>
+		</table>
+	</center>
+</div>
+<hr>
+<label><p style="font-size: 20px;"> Change Text to any color which makes it easy for you to read:<input type="text" name="change_color" placeholder="#Colorcode or Colorname" id="new_color"></label>
+<label><input type="button" value="Change" id="change_button" onclick="change()"></label>
+<label><input type="button" value="Back to Default" id="Default" onclick="defaultColor()"></label>
+<div id="content">
+	<p id="intro">I was born on 8<sup>th</sup> November 2000. I currently live in Imadol, Lalitpur with my parents. I have an elder brother who is currently in US. I currently study Engineering in IT (BEIT) at NCIT (Nepal College of Information and Technology) College which is located at Balkumari, Lalitpur. Besides Engineering, I am also currently taking animation classes at <a href="https://www.animaxacademy.com" class="link" target="_blank"><i>Animax Animation Academy</i></a>, Paryag Pokhari, Lalitpur. Computers and technologies always fascinated me which brought me to the Engineering in IT. Similarly I have been interested in Art and sketching my whole life and i like to create something that looks attractive, which brought me to Animation field. As for my hobbies, I like to sing, listen to music alot,sketch, play games, and most of all i like to watch and play football.My favourite football team is FC Barcelona, which is a Spanish football team. I like to be involved in extra curricular activities and I also like to learn new thing. I am also a member of a famous organization called Rotaract, of which I am the <i>' International Service Director '</i>
+	of <a href="https://www.facebook.com/rotaractpds/" class="link" target="_blank"><i>Rotaract Club of Patan Durbar Square.</i></a></p>
+
+	<center><a href="mywork.html"><p id="work">Click Here to view some of my works</p></a></center>
+</div>
+<script type="text/javascript">
+	function change(){
+		var newColor=document.getElementById("new_color").value;
+		var color1=document.getElementById("intro").style;
+		color1.color=newColor;
+	}
+	function defaultColor(){
+		var color2=document.getElementById("intro").style;
+		color2.color="#508079";
+	}
+</script>
+<div id="clockdisplay" class="clockstyle"></div>
+</body>
+</html>

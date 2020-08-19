@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rohil Maharjan - My webpage</title>
+	<meta name="keywords" content="Rohil,Maharjan,webpage">
+	<meta name="Author" content="Rohil maharjan">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<link rel="icon" href="../Images/120-1205879_transparent-rated-r-png-png-download-black-r.png">
+	<link href="../Other_files/style.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="javascript.js"></script>
+	<style type="text/css">
+		#Home p:hover{
+			color: white;
+			transform: translateY(-5px);
+			transition: 0.5s;
+			
+		}
+		#Home{
+			color: black;
+		}
+		
+		#About{
+			background-color: black;
+			border-radius: 15px;
+		}
+		#About p{
+			color:white;
+		}
+		
+		#Gallery{
+			color: black;
+		}
+		#Gallery p:hover{
+			color: white;
+			transform: translateY(-5px);
+			transition: 0.5s;
+		}
+		#Contact{
+			color: black;
+		}
+		#Contact p:hover{
+			color: white;
+			transform: translateY(-5px);
+			transition: 0.5s;
+		}
+		#mywork1{
+			font-size: 30px;
+			font-weight: bold;
+			margin-left: 100px;
+			background-color: black;
+			color: white;
+			display: inline-block;
+			padding: 10px;
+			border-radius: 15px;
+		}
+		#mywork2{
+			font-size: 30px;
+			font-weight: bold;
+			margin-left: 100px;
+			background-color: black;
+			color: white;
+			display: inline-block;
+			padding: 10px;
+			border-radius: 15px;
+		}
+		#mywork3{
+			font-size: 30px;
+			font-weight: bold;
+			margin-left: 100px;
+			background-color: black;
+			color: white;
+			display: inline-block;
+			padding: 10px;
+			border-radius: 15px;
+		}
+	 	#back{
+	 		height: 60px;
+	 		width: 60px;
+	 		position: fixed;
+	 		top: 10px;
+	 		display: inline-block;
+	 	}
+	 	#back:hover{
+	 		transform: scale(0.9);
+	 		transition: 0.3s;
+	 	}
+	 	.work{
+	 		color:black;
+	 		background-color: rgba(255,255,255,0.5);
+	 		font-size: 30px;
+	 		text-align: center;
+	 		margin:0px;
+	 	}
+	 	#img1{
+	 		position: absolute;
+	 		top:0px;
+	 		left:0px;
+	 		z-index: 0;
+	 	}
+	 	#img1:hover{
+	 		transform: translateY(10px);
+	 		transition: 0.3s;
+	 	}
+	 	#img2{
+	 		position: absolute;
+	 		top:0px;
+	 		left:100px;
+	 		z-index: 0;
+	 	}
+	 	#img2:hover{
+	 		transform: translateY(10px);
+	 		transition: 0.3s;
+	 	}
+	 	#img3{
+	 		position: absolute;
+	 		top:0px;
+	 		left:200px;
+	 		z-index: 0;
+	 	}
+	 	#img3:hover{
+	 		transform: translateY(10px);
+	 		transition: 0.3s;
+	 	}
+	 	#img4{
+	 		position: absolute;
+	 		top:0px;
+	 		left:300px;
+	 		z-index: 0;
+	 	}
+	 	#img4:hover{
+	 		transform: translateY(10px);
+	 		transition: 0.3s;
+	 	}
+	 	#img5{
+	 		position: absolute;
+	 		top:0px;
+	 		left:400px;
+	 		z-index: 0;
+	 	}
+	 	#img5:hover{
+	 		transform: translateY(10px);
+	 		transition: 0.3s;
+	 	}
+	 	#img6{
+	 		position: absolute;
+	 		top:20px;
+	 		left:500px;
+	 		z-index: 0;
+	 	}
+	 	#img6:hover{
+	 		transform: translateY(10px);
+	 		transition: 0.3s;
+	 	}
+	 	#content{
+	 		position: relative;
+	 	}
+	 	#content1{
+	 		margin-left: 80px;
+	 		margin-top: 20px;
+	 		position: absolute;
+	 		visibility: visible;
+	 	}
+	 	#content1 img{
+	 		height: 370px;
+	 		width:600px;
+	 		border-radius: 15px;
+	 		border:2px solid black;
+	 	}
+	 	#content2{
+	 		position: absolute;
+	 		top:0px;
+	 		visibility: hidden;
+	 	}
+	 	#btn1,#btn2,#btn3{
+	 		background-color: rgba(255,255,255,0);
+	 		border-radius: 15px;
+	 		font-size: 30px;
+	 		border:none;
+	 		padding:10px;
+	 		margin-left: 100px;
+	 		margin-top: 20px;
+	 	}
+	 	#btn1{
+	 		background-color: black;
+	 		color: white;
+	 	}
+	 	#btn1:hover{
+	 		transform: scale(0.9);
+	 		transition: 0.3s;
+	 	}
+	 	#btn2:hover{
+	 		transform: scale(0.9);
+	 		transition: 0.3s;
+	 	}
+	 	#btn3:hover{
+	 		transform: scale(0.9);
+	 		transition: 0.3s;
+	 	}
+	 	.work_name{
+	 		font-size: 20px;
+	 		font-weight: bold;
+	 	}
+	 	.video{
+	 		display: inline-block;
+	 	}
+	 	video{
+	 		display: inline-block;
+	 		margin-left: 100px;
+	 		margin-top: 50px;
+	 		width: 500px;
+	 		border:2px solid black;
+	 		border-radius: 15px;
+	 	}
+	 	video:hover{
+	 		border:2px solid orange;
+	 	}
+	 	#content3{
+	 		position: absolute;
+	 		top: 20px;
+	 		display: inline-block;
+	 		margin-left:80px;
+	 		visibility: hidden;
+	 	}
+	 	.web_project{
+	 		display: inline-block;
+	 		height: 200px;
+	 		width: 200px;
+	 	}
+	 	.web_project:hover{
+	 		transform: scale(0.9);
+	 		transition: 0.3s;
+	 	}
+	 	table{
+	 		margin:0px;
+	 	}
+	</style>
+	</title>
+</head>
+<body>
+<div id="title">
+	<center>
+		<table border="0" id="titlebar">
+			<tr>
+				<th id="Home"><a href="../Main_file.html"><p>Home</p></a></th>
+				<th id="About"><p>About me</p></th>
+				<th id="Gallery"><a href="../Other_files/gallery.html"><p>Gallery</p></a></th>
+				<th id="Contact"><a href="../Other_files/contact.html"><p>Contact me</p></a></th>
+			</tr>
+		</table>
+	</center>
+</div>
+<a href="aboutme.html"><img src="../Images/73-734715_left-arrow-png-back-arrow-icon-android-transparent.png" id="back"></a>
+<hr>
+	<p class="work">My Works</p>
+<div style="display: inline-block;"><input type="button" value="Sketches" id="btn1" onclick="mywork1()"></div>
+<div style="display: inline-block;"><input type="button" value="Videos" id="btn2" onclick="mywork2()"></div>
+<div style="display: inline-block;"><input type="button" value="Web Projects" id="btn3" onclick="mywork3()"></div>
+<div id="content">
+	<div id="content1">
+		<img src="../Images/IMG_4889.jpg" id="img1" onclick="toTop('img1')">
+		<img src="../Images/IMG_4898.jpg" id="img2" onclick="toTop('img2')">
+		<img src="../Images/IMG_4901.jpg" id="img3" onclick="toTop('img3')">
+		<img src="../Images/IMG_4902.jpg" id="img4" onclick="toTop('img4')">
+		<img src="../Images/IMG-8739.jpg" id="img5" onclick="toTop('img5')">
+		<img src="../Images/IMG-8090.jpg" id="img6" onclick="toTop('img6')">
+	</div>
+	<div id="content2">
+		<table border="0">
+		<tr>
+			<td>
+				<video controls="button">
+					<source src="../Videos/THE_BOY.mp4" type="video/mp4">
+				</video>
+				<center><p class="work_name">The Boy</p></center>
+			</td>
+			<td>
+				<video controls="button">
+					<source src="../Videos/NEXT_animation.mp4" type="video/mp4">
+				</video><br>
+				<center><p class="work_name">NEXT Animation</p></center>
+			</td>
+		</tr>
+		</table>
+	</div>
+	<div id="content3">
+		<table>
+			<tr>
+				<td>
+					<a href="D:/Web_Technology/Project_1/Main_file.html" target="_blank"><img class="web_project" src="../Images/barca_logo.png" title="Click to Visit"></a><br>
+					<center><p class="work_name">Barcelona Website</p></center>	
+				</td>
+			</tr>	
+		</table>	
+	</div>	
+</div>
+
+<script type="text/javascript" language="javascript">
+	var topImg="img6";
+	function toTop(newTop){
+		var imgTop=document.getElementById(topImg).style;
+		var imgNew=document.getElementById(newTop).style;
+		imgTop.zIndex="0";
+		imgTop.top="0px";
+		imgTop.border="2px solid black";
+		imgNew.zIndex="5";
+		imgNew.top="20px";
+		imgNew.border="2px solid orange";
+		topImg=newTop;
+	}
+	function mywork1(){
+	var w1=document.getElementById("content1").style;
+	var w2=document.getElementById("content2").style;
+	var w3=document.getElementById("content3").style;
+		w1.visibility="visible";
+		w2.visibility="hidden";
+		w3.visibility="hidden";
+	var butn1=document.getElementById("btn1").style;
+	var butn2=document.getElementById("btn2").style;
+	var butn3=document.getElementById("btn3").style;
+		butn1.backgroundColor="black";
+		butn1.color="white";
+		butn2.backgroundColor="rgba(255,255,255,0)";
+		butn2.color="black";
+		butn3.backgroundColor="rgba(255,255,255,0)";
+		butn3.color="black";
+	}
+	function mywork2(){
+	var w1=document.getElementById("content1").style;
+	var w2=document.getElementById("content2").style;
+	var w3=document.getElementById("content3").style;
+		w1.visibility="hidden";
+		w2.visibility="visible";
+		w3.visibility="hidden";
+	var butn1=document.getElementById("btn1").style;
+	var butn2=document.getElementById("btn2").style;
+	var butn3=document.getElementById("btn3").style;
+		butn2.backgroundColor="black";
+		butn2.color="white";
+		butn1.backgroundColor="rgba(255,255,255,0)";
+		butn1.color="black";
+		butn3.backgroundColor="rgba(255,255,255,0)";
+		butn3.color="black";
+	}
+	function mywork3(){
+	var w1=document.getElementById("content1").style;
+	var w2=document.getElementById("content2").style;
+	var w3=document.getElementById("content3").style;
+		w1.visibility="hidden";
+		w2.visibility="hidden";
+		w3.visibility="visible";
+	var butn1=document.getElementById("btn1").style;
+	var butn2=document.getElementById("btn2").style;
+	var butn3=document.getElementById("btn3").style;
+		butn1.backgroundColor="rgba(255,255,255,0)";
+		butn1.color="black";
+		butn2.backgroundColor="rgba(255,255,255,0)";
+		butn2.color="black";
+		butn3.backgroundColor="black";
+		butn3.color="white";
+		}
+</script>
+<div id="clockdisplay" class="clockstyle"></div>
+</body>
+</html>
